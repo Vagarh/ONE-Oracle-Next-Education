@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario_Contacto </title>
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+    <body>
+
+        <header>
+            <h1><img src="imagenes/logo.png" alt="Logo de la Barberia" ></h1>
+            <nav>
+                <ul">
+                <li><a href="Barberia_Alura.html"> Home </a></li>
+                <li><a href="Productos_Barberia.html">Productos y Servicios  </a></li>
+                <li><a href="contacto.html">Contactos </a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+
+        <main>
+            <form class="formulario">
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="Correo@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="XXX-XXX-XXX">
+
+                <label for="Mensaje">Asunto</label>
+                <textarea cols="70px" rows="20px" id="Mensaje"></textarea>
+
+                <fieldset>
+                    <legend> Como le gustaria que los contactemos </legend>       
+                    <label for="radio_email"><input type="radio" name="contacto" value="email" id="radio_email">Email</label>
+                    <label for="radio_telefono"> <input type="radio"  name="contacto"  value="telefono" id="radio_telefono">Telefono</label>
+                    <label for="radio_ws"> <input type="radio" name="contacto" value="Whatsaap" id="radio_ws"  checked >Whatsaap </label> 
+                </fieldset>
+
+                <fieldset>
+                    <legend> En cual Horario desea ser atendido</legend>  
+                    <select>
+                        <option>Mañana </option>
+                        <option>Tarde </option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <label>
+                    <input class="checkbox" type="checkbox" checked > Le gustaria recibir mas informacion 
+                </label>
+                
+                <input  class="Enviar" type="submit" value="Enviar Formulario">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h-20h</td>
+                    </tr>   
+                    
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8h-20h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8h-20h</td>
+                    </tr>
+
+
+                </tbody>
+           
+          
+
+
+            </table>
+
+         
+
+        </main>
+
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la compañia">
+            <p class="copy"> Copyrigth Barberia ALURA 2023 </p>
+        </footer>
+
+
+    </body>
+
+</html>
